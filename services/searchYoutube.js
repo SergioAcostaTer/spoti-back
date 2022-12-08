@@ -12,7 +12,8 @@ async function searchYoutube(obj) {
   const searchResults = await ytsr(filtered.url, optionsSR);
   // console.log({...obj, link: searchResults.items[0]?.url} )
   //   return { link: searchResults.items[0]?.url };
-  return { ...obj, link: searchResults.items[0]?.url };
+//   console.log(searchResults)
+  return { ...obj, link: searchResults?.items[0]?.url, title: searchResults?.items[0]?.title, };
 }
 
 module.exports = { searchYoutube };
