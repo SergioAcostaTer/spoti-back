@@ -2444,8 +2444,9 @@ router.get("/download/:name/:artist", async (req, res) => {
 
   res.header(
     "Content-Disposition",
-    `attachment; filename="${searched.title}.mp3`
+    `attachment; filename="${name} - ${artist}.mp3`
   );
+  // console.log(name, artist)
   ytdl(searched.link, { format: "mp3", quality: "lowestaudio" }).pipe(res);
 });
 
