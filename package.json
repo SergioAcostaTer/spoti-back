@@ -1,0 +1,24 @@
+{
+  "name": "spotifyv2",
+  "version": "1.0.0",
+  "description": "spotify donwloader",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index js"
+  },
+  "keywords": [
+    "spotify"
+  ],
+  "author": "Sergio Acosta",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.20",
+    "spotify-web-api-node": "^5.0.2",
+    "ytsr": "^3.8.0",
+    "zlib": "^1.0.5"
+  },
+  "type": "commonjs"
+}
