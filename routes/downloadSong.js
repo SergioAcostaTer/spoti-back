@@ -4,7 +4,7 @@ const router = express.Router();
 const { searchYoutube } = require("../services/searchYoutube.js");
 const ytdl = require("ytdl-core");
 
-router.get("/downloadsong/:name/:artist", async (req, res) => {
+router.get("/download/:name/:artist", async (req, res) => {
   const { name, artist } = req.params;
 
   //playlist
