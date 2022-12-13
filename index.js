@@ -18,4 +18,4 @@ app.get("/", (req, res) => {
 app.use("/", downloadSong)
 
 
-app.listen(PORT, "192.168.1.90" ,console.log(`Server running on ${PORT} port :)`))
+app.listen(PORT ,console.log(`Server running on ${PORT} port :)`))
