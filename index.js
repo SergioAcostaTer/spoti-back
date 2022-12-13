@@ -5,8 +5,11 @@ const app = express()
 const downloadSong = require("./routes/downloadSong")
 
 const PORT = process.env.PORT || 4000
+// var HOST = '192.168.1.90';
 
-app.use(cors());
+app.use(cors({
+    origin: '*'
+}));
 app.use(express.json());
 
 app.get("/", (req, res) => {
@@ -15,4 +18,4 @@ app.get("/", (req, res) => {
 app.use("/", downloadSong)
 
 
-app.listen(PORT, console.log(`Server running on ${PORT} port :)`))
+app.listen(PORT, "192.168.1.90" ,console.log(`Server running on ${PORT} port :)`))

@@ -3,3 +3,12 @@ GET http://localhost:4000/downloadsong/Feid/Le Pido A Dios
 ###
 
 https://spotidownloader-back.herokuapp.com/downloadsong/feid/como%20nengo
+
+###
+
+POST https://accounts.spotify.com/api/token
+
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic ZmQ2YmM0ODFkNDMwNDQyYzgwMTFhNDg1ODlkYjAxYTE6Mzg2ZDZmM2NmMTZiNGM1MzhhOTA5MzE5YThkNTgwMzQ=
+
+
